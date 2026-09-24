@@ -63,7 +63,10 @@ jobs:
 workflows:
   deploy:
     jobs:
-      - deploy-component
+      - deploy-component:
+          filters:
+            branches:
+              only: main
       - cancel-deploy:
           requires:
             - deploy-component:
