@@ -52,7 +52,7 @@ jobs:
   # if the deploy job is canceled
   cancel-deploy:
     docker:
-      - image: cimg/base:current
+      - image: cimg/base:2024.06
     steps:
       - run:
           name: Update planned release to CANCELED
