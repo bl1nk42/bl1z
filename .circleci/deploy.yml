@@ -58,7 +58,7 @@ jobs:
           name: Update planned release to CANCELED
           command: |
             circleci run release update \
-             --status=CANCELED
+               --status=CANCELED
 
 workflows:
   deploy:
