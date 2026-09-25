@@ -45,7 +45,7 @@ jobs:
           name: Update planned release to FAILED
           command: |
             circleci run release update \
-             --status=FAILED
+              --status=FAILED
           when: on_fail
 
   # This job handles the cancellation of the deploy marker
